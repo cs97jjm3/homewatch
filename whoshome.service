@@ -1,0 +1,14 @@
+[Unit]
+Description=Who's Home network watcher
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=__USER__
+WorkingDirectory=__DIR__
+ExecStart=/usr/bin/python3 whoshome.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

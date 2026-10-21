@@ -1,0 +1,11 @@
+# Your own settings (has your private ntfy topic in it)
+config.py
+
+# The database with your devices and history
+*.db
+*.db-journal
+
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
